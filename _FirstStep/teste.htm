@@ -1,0 +1,46 @@
+<script type="text/javascript" src="_js/jquery.syntaxhighlighter.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    	// Smart Wizard    	
+  		$('#wizard').smartWizard({contentURL:'_services/services1.php',transitionEffect:'slideleft',onFinish:onFinishCallback,contentCache:false});
+      
+		  function onFinishCallback(){
+			alert('Finish Called');
+		  }     
+	});
+
+</script>
+
+<!-- Smart Wizard -->
+<div id="wizard" class="swMain">
+	<ul>
+		<li><a href="#step-1"> <label class="stepNumber">1</label> <span
+				class="stepDesc"> PHP Basic<br /> <small>Conhecimentos
+						PHP 1/10</small>
+			</span>
+		</a></li>
+		<li><a href="#step-2"> <label class="stepNumber">2</label> <span
+				class="stepDesc"> PHP OO<br /> <small>Orientação
+						Objetos 1/10</small>
+			</span>
+		</a></li>
+		<li><a href="#step-3"> <label class="stepNumber">3</label> <span
+				class="stepDesc"> Algorítmos<br /> <small>Lógica
+						programação 1/5</small>
+			</span>
+		</a></li>
+		<li><a href="#step-4"> <label class="stepNumber">4</label> <span
+				class="stepDesc"> Padrões<br /> <small>Desenv.
+						Estruturado 1/5</small>
+			</span>
+		</a></li>
+
+	</ul>
+	<div id="step-1"></div>
+	<div id="step-2"></div>
+	<div id="step-3"></div>
+	<div id="step-4"></div>
+
+</div>
+<!-- End SmartWizard Content -->
+
